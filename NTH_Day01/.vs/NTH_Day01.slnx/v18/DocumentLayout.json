@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Student.cs",
+              "RelativeDocumentMoniker": "NTH_Day01\\Student.cs",
+              "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Student.cs",
+              "RelativeToolTip": "NTH_Day01\\Student.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwBQAAAChAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T15:19:55.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Program.cs",
+              "RelativeDocumentMoniker": "NTH_Day01\\Program.cs",
+              "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Program.cs",
+              "RelativeToolTip": "NTH_Day01\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAgwGwBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T15:30:54.993Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

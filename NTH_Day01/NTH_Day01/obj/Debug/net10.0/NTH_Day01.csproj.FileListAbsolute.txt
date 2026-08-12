@@ -1,0 +1,14 @@
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.GeneratedMSBuildEditorConfig.editorconfig
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.AssemblyInfoInputs.cache
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.AssemblyInfo.cs
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.csproj.CoreCompileInputs.cache
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\bin\Debug\net10.0\NTH_Day01.exe
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\bin\Debug\net10.0\NTH_Day01.deps.json
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\bin\Debug\net10.0\NTH_Day01.runtimeconfig.json
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\bin\Debug\net10.0\NTH_Day01.dll
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\bin\Debug\net10.0\NTH_Day01.pdb
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.dll
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\refint\NTH_Day01.dll
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.pdb
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\NTH_Day01.genruntimeconfig.cache
+E:\BT_LTW\NTH_BT_LTW\NTH_Day01\NTH_Day01\obj\Debug\net10.0\ref\NTH_Day01.dll
