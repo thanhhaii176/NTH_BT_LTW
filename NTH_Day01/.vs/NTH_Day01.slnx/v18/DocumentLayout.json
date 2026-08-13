@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\bai2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\bai2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\bai1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|solutionrelative:nth_day01\\bai1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FA7F606-9AB1-692F-969E-2E061D5E00DB}|NTH_Day01\\NTH_Day01.csproj|e:\\bt_ltw\\nth_bt_ltw\\nth_day01\\nth_day01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,30 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai2.cs",
+              "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Bai2.cs",
+              "RelativeDocumentMoniker": "NTH_Day01\\Bai2.cs",
+              "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Bai2.cs",
+              "RelativeToolTip": "NTH_Day01\\Bai2.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAuwLgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T03:11:12.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bai1.cs",
+              "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Bai1.cs",
+              "RelativeDocumentMoniker": "NTH_Day01\\Bai1.cs",
+              "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Bai1.cs",
+              "RelativeToolTip": "NTH_Day01\\Bai1.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAkwHUBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T15:44:24.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Employee.cs",
+              "RelativeDocumentMoniker": "NTH_Day01\\Employee.cs",
+              "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Employee.cs",
+              "RelativeToolTip": "NTH_Day01\\Employee.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAUwKgAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:24:16.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Student.cs",
               "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Student.cs",
               "RelativeDocumentMoniker": "NTH_Day01\\Student.cs",
               "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Student.cs",
               "RelativeToolTip": "NTH_Day01\\Student.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwBQAAAChAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBQAAAChAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T15:19:55.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T15:19:55.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Program.cs",
               "RelativeDocumentMoniker": "NTH_Day01\\Program.cs",
               "ToolTip": "E:\\BT_LTW\\NTH_BT_LTW\\NTH_Day01\\NTH_Day01\\Program.cs",
               "RelativeToolTip": "NTH_Day01\\Program.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAgwGwBAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-10T15:30:54.993Z",
               "EditorCaption": ""
