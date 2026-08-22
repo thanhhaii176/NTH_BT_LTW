@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MyAppMVC.Models.Product>
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+<h2>Quản lý sản phẩm</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="text-align: center">ID</th>
+            <th style="text-align: center">Name</th>
+            <th style="text-align: center">Price</th>
+            <th style="text-align: center">CreatedAt</th>
+            <th style="text-align: center">Image</th>
+            <th style="text-align: center">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price.ToString("#,##0") đ</td>
+                <td>@product.CreatedAt.ToString("dd-MM-yyyy")</td>
+                <td>
+                    <img src="~/images/@product.Image"
+                        width="50"
+                        height="50"
+                        style="object-fit: contain"/>
+                </td>
+                <td style="text-align: right">
+                    <a asp-controller="Product"
+                        asp-action="Index"
+                        class="btn btn-success btn-sm">
+                        View
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
