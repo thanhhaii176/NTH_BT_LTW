@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace MyAppMVC
 {
     public class Program
@@ -25,11 +27,50 @@ namespace MyAppMVC
             app.UseAuthorization();
 
             app.MapStaticAssets();
+            //Account
+            app.MapControllerRoute(
+                name: "account",
+                pattern: "Account",
+                defaults: new
+                {
+                    controller = "Account",
+                    action = "Index"
+                });
+
+            //Product
+            app.MapControllerRoute(
+                name: "product",
+                pattern: "San-pham",
+                defaults: new
+                {
+                    controller = "Product",
+                    action = "Index"
+                });
+
+            //Product Category
+            app.MapControllerRoute(
+                name: "product_category",
+                pattern: "San-pham/danh-muc/{categoryId}",
+                defaults: new
+                {
+                    controller = "Product",
+                    action = "Category"
+                });
+
+            //Product Detail
+            app.MapControllerRoute(
+                name: "product_detail",
+                pattern: "Chi-tiet-san-pham/{id}",
+                defaults: new
+                {
+                    controller = "Product",
+                    action = "Detail"
+                });
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
-
             app.Run();
         }
     }

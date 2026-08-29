@@ -1,0 +1,59 @@
+﻿@using MyAppMVC.Models
+
+@{
+    var product = ViewBag.Product as Product;
+}
+
+<h2>Chi tiet san pham</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="@product.Image"
+            class="img-fluid"
+            style="max-height:350px; object-fit:contain"/>
+    </div>
+
+    <div class="col-md-8">
+        <h2>
+            San pham: @product.Name
+        </h2>
+
+        <h4>
+            Gia goc:
+            <del>@product.Price.ToString("N0")</del>
+
+            Gia moi:
+            <span class="text-danger">
+                @product.SalePrice.ToString("N0")
+            </span>
+        </h4>
+
+        <h4>Mo ta:</h4>
+        <p>
+            @product.Description
+        </p>
+        <h4>
+            Trang thai:
+            @if(product.Status == 1)
+            {
+                <span>Dang ban</span>
+            }
+            else
+            {
+                <span>Ngung ban</span>
+            }
+        </h4>
+
+        <h4>
+            Ngay dang:
+            @product.CreatedAt
+        </h4>
+
+        <hr />
+
+        <a asp-route="product"
+            class="btn btn-danger">
+            Ve danh sach
+        </a>
+    </div>
+</div>

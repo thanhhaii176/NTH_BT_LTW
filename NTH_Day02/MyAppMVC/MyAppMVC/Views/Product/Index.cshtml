@@ -1,43 +1,62 @@
-﻿@model IEnumerable<MyAppMVC.Models.Product>
+﻿@using MyAppMVC.Models
 @{
-    ViewData["Title"] = "Quản lý sản phẩm";
+    var products = ViewBag.Products as List<Product>;
+    var categories = ViewBag.Categories as List<Category>;
 }
-<h2>Quản lý sản phẩm</h2>
+ <div class="row">
+     <div class="col-md-3">
+         <h4>DANH MUC</h4>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th style="text-align: center">ID</th>
-            <th style="text-align: center">Name</th>
-            <th style="text-align: center">Price</th>
-            <th style="text-align: center">CreatedAt</th>
-            <th style="text-align: center">Image</th>
-            <th style="text-align: center">Actions</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach(var product in Model)
-        {
-            <tr>
-                <td>@product.Id</td>
-                <td>@product.Name</td>
-                <td>@product.Price.ToString("#,##0") đ</td>
-                <td>@product.CreatedAt.ToString("dd-MM-yyyy")</td>
-                <td>
-                    <img src="~/images/@product.Image"
-                        width="50"
-                        height="50"
-                        style="object-fit: contain"/>
-                </td>
-                <td style="text-align: right">
-                    <a asp-controller="Product"
-                        asp-action="Index"
-                        class="btn btn-success btn-sm">
-                        View
+         <ul class="list-group">
+            @foreach(var category in categories)
+            {
+                <li class="list-group-item">
+                    <a asp-route="product_category"
+                        asp-route-categoryId="@category.Id"
+                        class="text-dark text-decoration-none">
+                        @category.Name
                     </a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                </li>
+            }
+        </ul>
+     </div>
+
+     <div class="col-md-9">
+         <h2>Danh sach san pham</h2>
+
+         <div class="row">
+            @foreach(var product in products)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="@product.Image"
+                            class="card-img-top"
+                            style="height:180px; object-fit:contain;"/>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                @product.Name
+                            </h5>
+
+                            <p>
+                                Gia goc:
+                                <del>@product.Price.ToString("N0")</del>
+                            </p>
+
+                            <p class="text-danger">
+                                Gia moi:
+                                @product.SalePrice.ToString("N0")
+                            </p>
+
+                            <a asp-route="product_detail"
+                                asp-route-id="@product.Id"
+                                class="btn btn-success w-100">
+                                Chi tiet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+     </div>
+ </div>
