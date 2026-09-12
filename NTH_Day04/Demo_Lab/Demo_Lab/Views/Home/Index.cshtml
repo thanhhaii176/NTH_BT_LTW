@@ -1,0 +1,56 @@
+﻿@model List<Demo_Lab.Models.Product>
+
+@{
+    ViewData["Title"] = "Trang chủ";
+
+    var categories = new List<Demo_Lab.Models.Category>
+    {
+        new Category {Id = 1, Name = "Áo dài"},
+        new Category {Id = 2, Name = "Áo đông"},
+        new Category {Id = 3, Name = "Túi xách"},
+        new Category {Id = 4, Name = "Đồng hồ"},
+        new Category {Id = 5, Name = "Ví da"},
+        new Category {Id = 6, Name = "Thắt lưng da"},
+        new Category {Id = 7, Name = "Tủ lạnh"},
+        new Category {Id = 8, Name = "Tivi"},
+        new Category {Id = 9, Name = "Quạt điện"},
+        new Category {Id = 10, Name = "Lò sưởi"},
+    };
+}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            <partial name="_CategoryPartial" model="categories" />
+
+            <img src="~/images/banner.jfif" class="img-fluid mt-3"/>
+        </div>
+
+        <div class="col-md-9">
+            <h6 class="bg-primary text-white p-2">
+                Sản phẩm mới nhất
+            </h6>
+
+            <div class="row">
+                @foreach (var product in Model)
+                {
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="@product.Image" class="card-img-top"
+                                 style="height:180px; object-fit:contain"/>
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    @product.Name
+                                </h6>
+                                <p class="text-danger fw-bold">
+                                    @product.Price.ToString("N0") đ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            @await Component.InvokeAsync("HotProduct")
+        </div>
+    </div>
+</div>
