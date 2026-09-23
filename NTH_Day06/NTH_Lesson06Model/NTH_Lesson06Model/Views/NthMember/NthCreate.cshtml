@@ -1,0 +1,54 @@
+@model NTH_Lesson06Model.Models.NthMember
+
+@{
+    ViewData["Title"] = "NthCreate";
+}
+
+<h1>NthCreate</h1>
+
+<h4>NthMember</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NthCreate" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* <div class="form-group">
+                <label asp-for="NthMemberId" class="control-label"></label>
+                <input asp-for="NthMemberId" class="form-control" />
+                <span asp-validation-for="NthMemberId" class="text-danger"></span>
+            </div> *@
+
+            <div class="form-group">
+                <label asp-for="NthMemberUserName" class="control-label"></label>
+                <input asp-for="NthMemberUserName" class="form-control" />
+                <span asp-validation-for="NthMemberUserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NthMemberPassword" class="control-label"></label>
+                <input asp-for="NthMemberPassword" class="form-control" />
+                <span asp-validation-for="NthMemberPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NthMemberEmail" class="control-label"></label>
+                <input asp-for="NthMemberEmail" class="form-control" />
+                <span asp-validation-for="NthMemberEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NthMemberFullName" class="control-label"></label>
+                <input asp-for="NthMemberFullName" class="form-control" />
+                <span asp-validation-for="NthMemberFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NthIndex">Back to List</a>
+</div>

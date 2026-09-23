@@ -1,0 +1,59 @@
+@model IEnumerable<NTH_Lesson06Model.Models.NthMember>
+
+@{
+    ViewData["Title"] = "NthIndex";
+}
+
+<h1>NthIndex</h1>
+
+<p>
+    <a asp-action="NthCreate">Create New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NthMemberId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthMemberUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthMemberPassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthMemberEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthMemberFullName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.NthMemberId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NthMemberUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NthMemberPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NthMemberEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NthMemberFullName)
+            </td>
+            <td>
+                <a asp-action="NthEdit" asp-route-id="@item.NthMemberId">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.NthMemberId">Details</a> |
+                <a asp-action="NthDelete" asp-route-id="@item.NthMemberId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
