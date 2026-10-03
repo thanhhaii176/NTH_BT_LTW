@@ -1,0 +1,77 @@
+@model IEnumerable<NetCoreMVCLAB05.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    var categories = NetCoreMVCLAB05.Controllers.CategoryController.GetCategories();
+}
+
+<h1>Danh sách sản phẩm</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Hình ảnh
+            </th>
+            <th>
+                Giá sản phẩm
+            </th>
+            <th>
+                Giá khuyến mãi
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th>
+                Danh mục
+            </th>
+            <th>
+                Chức năng
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) 
+        {
+            var category = categories.FirstOrDefault(x => x.Id == item.CategoryId);
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="~/products/@item.Image" alt="@item.Name" width="100" height="100" class="img-thumbnail"/>
+                    }
+                    else
+                    {
+                        <span>Không có ảnh</span>
+                    }
+                </td>
+                <td>
+                    @item.Price.ToString("N0") VNĐ
+                </td>
+                <td>
+                    @item.SalePrice.ToString("N0") VNĐ
+                </td>
+                <td>
+                    @item.Description
+                </td>
+                <td>
+                    @(category?.Name ?? "Không xác định")
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
