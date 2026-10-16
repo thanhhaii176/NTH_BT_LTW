@@ -1,0 +1,42 @@
+@model Lesson08DB_First.Models.Publisher
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết Nhà xuất bản</h1>
+
+<div>
+    <h4>Publisher</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Mã Nhà xuất bản
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.PublisherId
+        </dd>
+        <dt class = "col-sm-2">
+            Tên Nhà xuất bản
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.PublisherName
+        </dd>
+        <dt class = "col-sm-2">
+            Số điện thoại
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Phone
+        </dd>
+        <dt class = "col-sm-2">
+            Địa chỉ
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Address
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-publisherid="@Model?.PublisherId" class="btn btn-warning">Sửa</a> 
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>

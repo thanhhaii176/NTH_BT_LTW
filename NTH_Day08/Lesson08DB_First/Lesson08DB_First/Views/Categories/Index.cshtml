@@ -1,0 +1,41 @@
+@model IEnumerable<Lesson08DB_First.Models.Category>
+
+@{
+    ViewData["Title"] = "Danh sách Category";
+}
+
+<h1>Danh sách Categpry</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm Category</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.CategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CategoryName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-categoryid="@item.CategoryId" class="btn btn-warning">Sửa</a> 
+                <a asp-action="Details" asp-route-categoryid="@item.CategoryId" class="btn btn-info">Chi tiết</a> 
+                <a asp-action="Delete" asp-route-categoryid="@item.CategoryId" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

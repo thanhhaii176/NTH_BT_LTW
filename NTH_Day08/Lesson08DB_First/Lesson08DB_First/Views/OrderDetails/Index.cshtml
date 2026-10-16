@@ -1,0 +1,61 @@
+@model IEnumerable<Lesson08DB_First.Models.OrderDetail>
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+}
+
+<h1>Chi tiết đơn hàng</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm chi tiết đơn hàng</a>
+</p>
+<table class="table table-borderless table-striped">
+    <thead>
+        <tr>
+            <th>
+                Mã đơn hàng
+            </th>
+            <th>
+                Mã sách
+            </th>
+            <th>
+                Số lượng
+            </th>
+            <th>
+                Đơn giá
+            </th>
+            <th>
+                Thành tiền
+            </th>
+            <th>
+                Thao tác
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.OrderId
+            </td>
+            <td>
+                @item.BookId
+            </td>
+            <td>
+                @item.Quantity
+            </td>
+            <td>
+                @item.Price đ
+            </td>
+            <td>
+                @item.TotalMoney đ
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-orderdetailid="@item.OrderDetailId" class="btn btn-warning btn-sm">Sửa</a> 
+                <a asp-action="Details" asp-route-orderdetailid="@item.OrderDetailId" class="btn btn-info btn-sm">Chi tiết</a> 
+                <a asp-action="Delete" asp-route-orderdetailid="@item.OrderDetailId" class="btn btn-danger btn-sm">Xóa</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,55 @@
+@model IEnumerable<Lesson08DB_First.Models.Publisher>
+
+@{
+    ViewData["Title"] = "Danh sách Nhà xuất bản";
+}
+
+<h1>Danh sách Nhà xuất bản</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm Nhà xuất bản</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Mã
+            </th>
+            <th>
+                Tên Nhà xuất bản
+            </th>
+            <th>
+                Số điện thoại
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Chức năng
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.PublisherId
+            </td>
+            <td>
+                @item.PublisherName
+            </td>
+            <td>
+                @item.Phone
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-publisherid="@item.PublisherId" class="btn btn-warning">Sửa</a> 
+                <a asp-action="Details" asp-route-publisherid="@item.PublisherId" class="btn btn-info">Chi tiết</a> 
+                <a asp-action="Delete" asp-route-publisherid="@item.PublisherId" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

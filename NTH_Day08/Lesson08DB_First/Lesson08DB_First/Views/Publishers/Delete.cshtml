@@ -1,0 +1,44 @@
+@model Lesson08DB_First.Models.Publisher
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Xóa Nhà xuất bản</h1>
+
+<h3>Bạn có chắc chắn muốn xóa nhà xuất bản này không?</h3>
+<div>
+    <h4>Publisher</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Mã Nhà xuất bản
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.PublisherId
+        </dd>
+        <dt class = "col-sm-2">
+            Tên Nhà xuất bản
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.PublisherName
+        </dd>
+        <dt class = "col-sm-2">
+            Số điện thoại
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Phone
+        </dd>
+        <dt class = "col-sm-2">
+            Địa chỉ
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Address
+        </dd>
+    </dl>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="publisherid" value="@Model.PublisherId" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

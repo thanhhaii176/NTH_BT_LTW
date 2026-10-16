@@ -1,0 +1,55 @@
+@model Lesson08DB_First.Models.OrderDetail
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+}
+
+<h1>Chi tiết đơn hàng</h1>
+
+<div>
+    <h4>OrderDetail</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-3">
+            Mã đơn hàng
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.OrderId
+        </dd>
+        <dt class = "col-sm-3">
+            Mã sách
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.BookId
+        </dd>
+        <dt class = "col-sm-3">
+            Tên sách
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.Book?.Title
+        </dd>
+        <dt class = "col-sm-3">
+            Số lượng
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.Quantity
+        </dd>
+        <dt class = "col-sm-3">
+            Đơn giá
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.Price đ
+        </dd>
+        <dt class = "col-sm-3">
+            Thành tiền
+        </dt>
+        <dd class = "col-sm-9">
+            @Model.TotalMoney đ
+        </dd>
+    </dl>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-orderdetailid="@Model?.OrderDetailId" class="btn btn-warning">Sửa    </a> 
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>
