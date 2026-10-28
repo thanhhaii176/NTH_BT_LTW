@@ -34,3 +34,6 @@ Thumbs.db
 
 # Publish
 publish/
+# SQL Server database files
+*.mdf
+*.ldf
